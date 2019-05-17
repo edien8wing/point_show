@@ -1,0 +1,89 @@
+@import '~antd/dist/antd.css';
+.App {
+  text-align: center;
+}
+
+#components-layout-demo-custom-trigger .trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color .3s;
+}
+
+#components-layout-demo-custom-trigger .trigger:hover {
+  color: #1890ff;
+}
+
+#components-layout-demo-custom-trigger .logo {
+  height: 32px;
+  background: rgba(255,255,255,.2);
+  margin: 16px;
+}
+#bg{
+  background:#777;
+  width:100%;
+  height:70vh;
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+  position:relative;
+}
+.point10{
+  width: 10px;
+  height: 10px;
+  position: absolute;
+}
+.point20{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+.point30{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+.circle {
+    -webkit-animation:grow 1.5s infinite;
+     -moz-border-radius: 50px;
+     -webkit-border-radius: 50px;
+     border-radius: 50px;
+     z-index: 2;
+
+ }
+ @-webkit-keyframes grow /*Safari and Chrome*/
+ {
+   0% {opacity: 0.4}
+   50% {opacity:1}
+   100% {opacity:0.4}
+ }
+ /* 动画whirl,从0度旋转到360度 */
+
+@-webkit-keyframes whirl {
+      from {transform: rotate(0deg);}
+      to {transform: rotate(360deg);}
+}
+.point-text{
+
+      font-family: "Aril,微软雅黑,heiti";
+}
+.pint-text-red{
+  color:red;
+}
+.selectPoint{
+  border-style: dashed;
+  border-width:3px;
+  border-color: rgba(255,255,255,0.7);
+  box-shadow: 2px 3px 1px #888888;
+}
+.selectPoint:hover {
+    animation: whirl 9s linear infinite;  /* 执行动画whirl,执行一次的周期是9s,执行期间的速度曲线为linear,无限循环 */
+}
+.bg-red2{
+       background: red;
+       opacity: 0.5;
+}
+.drawerID{
+  font-size: 70px;
+  color:red;
+}
